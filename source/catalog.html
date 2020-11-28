@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body>
+  <header class="page-header">
+    <a class="page-header__img" href="#">
+      <img src="img/logo-mobile.svg" width="124" height="64" alt="Кэт энерджи">
+    </a>
+    <p class="page-header__logo logo"><b>CAT</b> ENERGY</p>
+    <nav class="main-nav"></nav>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="page-title">Каталог продукции</h1>
+    <section class="basic-products">
+      <h2 class="visually-hidden">Основные товары</h2>
+      <ul class="basic-products__items"></ul>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>PRO 500 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Курица</dd>
+          <dt>Цена</dt>
+          <dd>700 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>PRO 1000 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Курица</dd>
+          <dt>Цена</dt>
+          <dd>1000 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>PRO 500 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рыба</dd>
+          <dt>Цена</dt>
+          <dd>700 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>PRO 1000 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рыба</dd>
+          <dt>Цена</dt>
+          <dd>1000 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>SLIM 500 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Гречка</dd>
+          <dt>Цена</dt>
+          <dd>400 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>SLIM 1000 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Гречка</dd>
+          <dt>Цена</dt>
+          <dd>700 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">CAT ENERGY<br>SLIM 500 Г</p>
+        <dl class="basic-products__list">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рис</dd>
+          <dt>Цена</dt>
+          <dd>500 Р.</dd>
+        </dl>
+        <a class="basic-products__link basic-products--buy" href="#">Заказать</a>
+      </li>
+      <li class="basic-products__item">
+        <p class="basic-products__descpiption">Показать еще 100500товаров</p>
+        <p class="basic-products__list">На самом деле вкусов гораздо больше!</p>
+        <a class="basic-products__link basic-products--add" href="#">Показать все</a>
+      </li>
+    </section>
+    <section class="additional-products">
+      <h2 class="additional-products__title">Дополнительные товары</h2>
+      <ul class="additional-products__items">
+        <li class="additional-products__item">
+          <p class="additional-products__description">Сахарозаменитель</p>
+          <dl class="additional-products__list"></dl>
+          <dt>1 упаковка (100 г)</dt>
+          <dd>200 Р.</dd>
+          <a class="additional-products__link additional-products--buy" href="#"></a>
+        </li>
+        <li class="additional-products__item">
+          <p class="additional-products__description">Питьевая вода</p>
+          <dl class="additional-products__list"></dl>
+          <dt>5 литров</dt>
+          <dd>50 Р.</dd>
+          <a class="additional-products__link additional-products--buy" href="#"></a>
+        </li>
+        <li class="additional-products__item">
+          <p class="additional-products__description">Молоко</p>
+          <dl class="additional-products__list"></dl>
+          <dt>1 литр</dt>
+          <dd>100 Р.</dd>
+          <a class="additional-products__link additional-products--buy" href="#"></a>
+        </li>
+        <li class="additional-products__item">
+          <p class="additional-products__description">Витамины</p>
+          <dl class="additional-products__list"></dl>
+          <dt>1 упаковка (30 г)</dt>
+          <dd>300 Р.</dd>
+          <a class="additional-products__link additional-products--buy" href="#"></a>
+        </li>
+      </ul>
+      <div class="additional-products__present">
+        <img class="additional-products__image" src="img/icon-gift.svg" width="78" height="80" alt="подарок">
+        <p class="additional-products__text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-foter__contacts contacts">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <p class="contacts__invite">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <div class="contacts__map"></div>
+        <div class="contacts__marker"></div>
+      </section>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">Мы во Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+                class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
+                class="visually-hidden">Мы в Инстаграме</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
 
 </body>
-</html>
 
+</html>
