@@ -8,31 +8,32 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__img" href="#">
-      <img src="img/logo-mobile.svg" width="124" height="64" alt="Кэт энерджи">
+    <a class="page-header__logo logo" href="#">
+      <img src="img/logo-mobile.svg" width="124" height="64" alt="Логотип">
+      <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
     </a>
-    <p class="page-header__logo logo"><b>CAT</b> ENERGY</p>
-    <nav class="main-nav"></nav>
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="#">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <h1 class="page-title">Подбор программы</h1>
@@ -81,43 +82,40 @@
         <p class="form__note">* &mdash; Обязательные поля</p>
       </form>
     </section>
+    <section class="main__contacts contacts">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <p class="contacts__invite">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+      <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      <div class="contacts__map"></div>
+      <div class="contacts__marker"></div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <section class="page-foter__contacts contacts">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contacts__invite">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
-        <div class="contacts__map"></div>
-        <div class="contacts__marker"></div>
-      </section>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">Мы во Вконтакте</span>
-              <img src="img/icon_vkontakte.svg" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
-                class="visually-hidden">Мы в Фейсбуке</span>
-              <img src="img/icon_facebook.svg" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
-                class="visually-hidden">Мы в Инстаграме</span>
-              <img src="img/icon_instagram.svg" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </section>
+      <a class="page-footer__logo logo">
+        <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
+      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+              class="visually-hidden">Мы во Вконтакте</span>
+            <img src="img/icon_vkontakte.svg" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+              class="visually-hidden">Мы в Фейсбуке</span>
+            <img src="img/icon_facebook.svg" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
+              class="visually-hidden">Мы в Инстаграме</span>
+            <img src="img/icon_instagram.svg" alt="Инстаграм">
+          </a>
+        </li>
+      </ul>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
