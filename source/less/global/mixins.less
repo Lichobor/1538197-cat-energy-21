@@ -64,7 +64,7 @@
   font-size: @font;
   line-height: @line;
   text-transform: uppercase;
-  
+
 
 }
 
@@ -89,18 +89,19 @@
 
 }
 
-.flex() {
+.flex(@justify-content: center; @align-items: stretch) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: @justify-content;
+  align-items: @align-items;
+
 }
 
 
 
 .outline(@color: @black) {
-  outline: 3px solid @color;
-  outline-offset: -3px;
+  outline: 1px solid @color;
+  outline-offset: -1px;
 }
 
 .list-style() {

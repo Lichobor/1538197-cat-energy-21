@@ -1,73 +1,73 @@
 .promo {
-  
 
-  .promo__wrapper {
-    position: relative;
-    width: 320px;
-    height: 440px;
-    background-image: url("../img/index-background-desktop-2.jpg");
+
+  &__wrapper {
+    position         : relative;
+    width            : 320px;
+    height           : 440px;
+    background-image : url("../img/index-background-desktop-2.jpg");
     background-repeat: no-repeat;
-    z-index: 1;
-    
+    z-index          : 1;
+
+
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 320px;
-      height: 302px;
-      top: 0;
-      left: 0;
+      content         : "";
+      display         : block;
+      position        : absolute;
+      width           : 320px;
+      height          : 302px;
+      top             : 0;
+      left            : 0;
       background-color: rgba(104, 183, 56, 0.85);
-      background-size: 300px 302px;
-
+      background-size : 300px 302px;
     }
+
 
     &::after {
-      content: "";
-      display: block;
-      width: 280px;
-      height: 270px;
-      position: absolute;
-      background-image: url("../img/index-can-mobile-1.png");
+      content            : "";
+      display            : block;
+      width              : 280px;
+      height             : 270px;
+      position           : absolute;
+      background-image   : url("../img/index-can-mobile-1.png");
       background-position: center;
-      right: 20px;
+      right              : 20px;
     }
 
+
   }
+
 
   &__slogan {
     .center-2();
-    z-index: 2;
-    margin-top: 20px;
+    z-index      : 2;
+    margin-top   : 20px;
     margin-bottom: 30px;
   }
 
+
   &__slogan--style {
-    display: flex;
+    display  : flex;
     flex-wrap: wrap;
-    position: relative;
+    position : relative;
     .font_oswald-white-big(14px; 14px);
     justify-content: center;
-    align-items: center;
+    align-items    : center;
   }
 
 
-
-  &__link {    
+  &__link {
     .center-1();
     .center-2();
     margin-bottom: 20px;
-    
   }
+
 
   &__link--style {
     .button();
     .font_oswald-white-big(14px; 14px);
-    
-
   }
 
 
 }
-
