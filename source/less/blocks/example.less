@@ -1,74 +1,63 @@
 .example {
   background-color: @special_grey-4;
 
-
   &__wrapper {
     .center-1;
     .center-2;
-    padding-top   : 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 
-
   &__subtitle {
-    margin       : 0;
+    margin: 0;
     margin-bottom: 35px;
   }
-
 
   &__subtitle--style {
     .flex(flex-start);
     .font_oswald-black-norm(36px; 40px);
   }
 
-
   &__text {
     margin: 0;
   }
-
 
   &__text--style {
     .font_arial(14px; 14px);
   }
 
-
   &__list {
     .list-style();
-    display              : grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap             : 30px;
-    justify-content      : space-around;
-    margin-top           : 25px;
-    margin-bottom        : 35px;
+    grid-gap: 30px;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 35px;
   }
-
 
   &__item--style {
     .flex;
-    width        : 124px;
-    height       : 64px;
-    text-align   : center;
-    border       : 1px solid @special_grey;
+    width: 124px;
+    height: 64px;
+    text-align: center;
+    border: 1px solid @special_grey;
     border-radius: 3px;
-    box-sizing   : border-box;
+    box-sizing: border-box;
   }
-
 
   &__value {
     margin-bottom: 8px;
   }
-
 
   &__value--style {
     .flex;
     .font_oswald-black-big(24px; 24px);
   }
 
-
   &__description {
     margin: 0;
   }
-
 
   &__description--style {
     .flex;
@@ -76,17 +65,14 @@
     .font_arial(12px; 12px);
   }
 
-
   &__price {
     .center-1;
     .flex();
   }
 
-
   &__price--style {
     .font_oswald-black-big(14px; 20px);
   }
-
 
   &__slider {
     margin-top: 40px;
@@ -96,11 +82,9 @@
     .list-style;
   }
 
-
   &__slide--after {
     display: none;
   }
-
 
   &__control {
     .flex(space-around; center);
@@ -108,35 +92,30 @@
     .center-1;
   }
 
-
   &__control--style {
-    width : 228px;
+    width: 228px;
     height: 40px;
   }
-
 
   &__control--before,
   &__control--after {
     .font_oswald-black-big(16px; 20px);
   }
 
-
   &__scale--style {
-    width           : 84px;
-    height          : 14px;
+    width: 84px;
+    height: 14px;
     background-color: @white;
-    border-radius   : 6px;
-    padding         : 4px 5px;
-    box-sizing      : border-box;
+    border-radius: 6px;
+    padding: 4px 5px;
+    box-sizing: border-box;
   }
-
 
   &__bar--style {
-    width           : 35px;
-    height          : 6px;
+    width: 35px;
+    height: 6px;
     background-color: @basic_green;
-    border-radius   : 6px;
+    border-radius: 6px;
   }
-
 
 }
