@@ -1,25 +1,25 @@
-.features {
-  &__wrapper {
-    .center-1;
-    .center-2;
+
+  .features__wrapper {
+    .margin-auto;
+    .padding-mobile;
     padding-bottom: 1px;
   }
 
-  &__subtitle {
+  .features__subtitle {
     margin: 0;
     margin-bottom: 26px;
   }
 
-  &__subtitle--style {
+  .features__subtitle--style {
     .flex(flex-start);
     .font_oswald-black-norm(36px; 40px);
   }
 
-  &__list {
+  .features__list {
     .list-style();
   }
 
-  &__item {
+  .features__item {
     display: block;
     position: relative;
     padding-left: 80px;
@@ -27,7 +27,7 @@
     margin-bottom: 30px;
   }
 
-  &__item--style::before {
+  .features__item--style::before {
     content: "";
     display: block;
     position: absolute;
@@ -38,31 +38,31 @@
     bottom: -3px;
   }
 
-  &__item--helpful::after {
+  .features__item--helpful::after {
     content: "";
     .features-after();
     background: url("../img/icon_helpful.svg") no-repeat center;
   }
 
-  &__item--simply::after {
+  .features__item--simply::after {
     content: "";
     .features-after();
     background: url("../img/icon_simply.svg") no-repeat center;
   }
 
-  &__item--tasty::after {
+  .features__item--tasty::after {
     content: "";
     .features-after();
     background: url("../img/icon_tasty.svg") no-repeat center;
   }
 
-  &__item--quickly::after {
+  .features__item--quickly::after {
     content: "";
     .features-after();
     background: url("../img/icon_quickly.svg") no-repeat center;
   }
 
-  &__description--style {
+  .features__description--style {
     .font_arial(14px; 18px);
   }
-}
+

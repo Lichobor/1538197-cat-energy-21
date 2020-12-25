@@ -1,0 +1,52 @@
+.promo__wrapper {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  background-image: url("../img/index-background-desktop-2.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    top: 0;
+    left: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    background-size: 300px 302px;
+  }
+}
+
+.promo__slogan {
+  .padding-mobile();
+  z-index: 2;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.promo__slogan--style {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .font_oswald-white-big(14px; 14px);
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__image {
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+}
+
+.promo__button {
+  .margin-auto();
+  .padding-mobile();
+  margin-bottom: 20px;
+}
+
+.button--promo-style {
+  .font_oswald-white-big(14px; 14px);
+}

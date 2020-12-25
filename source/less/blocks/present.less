@@ -1,0 +1,31 @@
+.present__image {
+  .margin-auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.present__image--style {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  background-image: url("@{path-to-img}/icon_present.svg"),
+  url("@{path-to-img}/mobile_present-cat.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: 100px 60px, center;
+}
+
+.present__text {
+  position: absolute;
+  .flex;
+  width: 161px;
+  min-height: 60px;
+  overflow: hidden;
+  top: 170px;
+  left: 60px;
+}
+
+.present__text--style {
+  .font_arial(16px; 20px);
+  color: @white;
+  text-align: center;
+}

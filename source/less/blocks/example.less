@@ -1,32 +1,33 @@
 .example {
-  background-color: @special_grey-4;
+  background-color: @special_grey_4;
+}
 
-  &__wrapper {
-    .center-1;
-    .center-2;
+  .example__wrapper {
+    .margin-auto;
+    .padding-mobile;
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  &__subtitle {
+  .example__subtitle {
     margin: 0;
     margin-bottom: 35px;
   }
 
-  &__subtitle--style {
+  .example__subtitle--style {
     .flex(flex-start);
     .font_oswald-black-norm(36px; 40px);
   }
 
-  &__text {
+  .example__text {
     margin: 0;
   }
 
-  &__text--style {
+  .example__text--style {
     .font_arial(14px; 18px);
   }
 
-  &__list {
+  .example__list {
     .list-style();
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,7 +37,7 @@
     margin-bottom: 35px;
   }
 
-  &__item--style {
+  .example__item--style {
     .flex;
     width: 124px;
     height: 64px;
@@ -46,63 +47,63 @@
     box-sizing: border-box;
   }
 
-  &__value {
+  .example__value {
     margin-bottom: 8px;
   }
 
-  &__value--style {
+  .example__value--style {
     .flex;
     .font_oswald-black-big(24px; 24px);
   }
 
-  &__description {
+  .example__description {
     margin: 0;
   }
 
-  &__description--style {
+  .example__description--style {
     .flex;
     width: 85px;
     .font_arial(12px; 12px);
   }
 
-  &__price {
-    .center-1;
+  .example__price {
+    .margin-auto;
     .flex();
   }
 
-  &__price--style {
+  .example__price--style {
     .font_oswald-black-big(14px; 20px);
   }
 
-  &__slider {
+  .example__slider {
     margin-top: 40px;
   }
 
-  &__slider-list {
+  .example__slider-list {
     .list-style;
   }
 
-  &__slide--after {
+  .example__slide--after {
     display: none;
   }
 
-  &__control {
+  .example__control {
     .flex(space-around; center);
 
-    .center-1;
+    .margin-auto;
   }
 
-  &__control--style {
+  .example__control--style {
     width: 228px;
     height: 40px;
   }
 
-  &__control--before,
-  &__control--after {
+  .example__control--before,
+  .example__control--after {
     .font_oswald-black-big(16px; 20px);
   }
 
-  &__scale--style {
+  .example__scale--style {
     width: 84px;
     height: 14px;
     background-color: @white;
@@ -111,10 +112,10 @@
     box-sizing: border-box;
   }
 
-  &__bar--style {
+  .example__bar--style {
     width: 35px;
     height: 6px;
     background-color: @basic_green;
     border-radius: 6px;
   }
-}
+

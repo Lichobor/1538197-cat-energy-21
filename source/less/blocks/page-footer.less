@@ -1,0 +1,40 @@
+.page-footer__wrapper {
+  .margin-auto;
+  .padding-mobile;
+  .flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-footer__logo {
+  .flex;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid @special_grey_3;
+}
+
+.page-footer__social-list {
+  .list-style;
+  .flex(space-between);
+  padding: 25px 90px;
+  border-bottom: 1px solid @special_grey_3;
+}
+
+.page-footer__copyright {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .font_arial(16px; 18px);
+
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background: url("@{path-to-img}/html-academy_logo.svg") no-repeat center;
+    bottom: 20px;
+    right: 0;
+  }
+}
