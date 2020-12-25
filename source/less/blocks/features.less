@@ -1,68 +1,66 @@
+.features__wrapper {
+  .margin-auto;
+  .padding-mobile;
+  padding-bottom: 1px;
+}
 
-  .features__wrapper {
-    .margin-auto;
-    .padding-mobile;
-    padding-bottom: 1px;
-  }
+.features__subtitle {
+  margin: 0;
+  margin-bottom: 26px;
+}
 
-  .features__subtitle {
-    margin: 0;
-    margin-bottom: 26px;
-  }
+.features__subtitle--style {
+  .flex(flex-start);
+  .font_oswald-black-norm(36px; 40px);
+}
 
-  .features__subtitle--style {
-    .flex(flex-start);
-    .font_oswald-black-norm(36px; 40px);
-  }
+.features__list {
+  .list-style();
+}
 
-  .features__list {
-    .list-style();
-  }
+.features__item {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+  margin-bottom: 30px;
+}
 
-  .features__item {
-    display: block;
-    position: relative;
-    padding-left: 80px;
-    margin: 0;
-    margin-bottom: 30px;
-  }
+.features__item--style::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  left: 0;
+  bottom: -3px;
+}
 
-  .features__item--style::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: @basic_green;
-    left: 0;
-    bottom: -3px;
-  }
+.features__item--helpful::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_helpful.svg") no-repeat center;
+}
 
-  .features__item--helpful::after {
-    content: "";
-    .features-after();
-    background: url("../img/icon_helpful.svg") no-repeat center;
-  }
+.features__item--simply::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_simply.svg") no-repeat center;
+}
 
-  .features__item--simply::after {
-    content: "";
-    .features-after();
-    background: url("../img/icon_simply.svg") no-repeat center;
-  }
+.features__item--tasty::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_tasty.svg") no-repeat center;
+}
 
-  .features__item--tasty::after {
-    content: "";
-    .features-after();
-    background: url("../img/icon_tasty.svg") no-repeat center;
-  }
+.features__item--quickly::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_quickly.svg") no-repeat center;
+}
 
-  .features__item--quickly::after {
-    content: "";
-    .features-after();
-    background: url("../img/icon_quickly.svg") no-repeat center;
-  }
-
-  .features__description--style {
-    .font_arial(14px; 18px);
-  }
-
+.features__description--style {
+  .font_arial(14px; 18px);
+}
