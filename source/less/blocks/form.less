@@ -1,6 +1,11 @@
 .form__wrapper {
   width: 320px;
   .padding-mobile;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
 }
 
 .form__title {
@@ -131,6 +136,16 @@
   .reset-indents;
 }
 
+.form__additive-wrapper {
+  display: grid;
+  row-gap: 30px;
+  .outline(@blue);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
 .form__additive--style {
   padding-top: 30px;
   padding-bottom: 40px;
@@ -145,12 +160,8 @@
 
   label {
     .font_oswald-black-big(16px; 18px);
+    .outline(@yellow);
   }
-}
-
-.form__additive--wrapper {
-  display: grid;
-  row-gap: 30px;
 }
 
 .form__button {

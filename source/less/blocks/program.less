@@ -1,10 +1,16 @@
 .program__wrapper {
   .margin-auto;
   .padding-mobile;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
 }
 
 .program__list {
   .list-style();
+  margin-top: 20px;
 }
 
 .program__item {

@@ -3,7 +3,14 @@
   .padding-mobile;
   .flex;
   flex-direction: column;
-  align-items: stretch;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-mobile;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
@@ -24,8 +31,6 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
-  .font_arial(16px; 18px);
-
 
   &::after {
     content: "";
@@ -36,5 +41,13 @@
     background: url("@{path-to-img}/html-academy_logo.svg") no-repeat center;
     bottom: 20px;
     right: 0;
+  }
+}
+
+.page-footer__copyright--style {
+  .font_arial(16px; 18px);
+
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
   }
 }

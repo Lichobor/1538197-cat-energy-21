@@ -7,6 +7,11 @@
   .padding-mobile;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet();
+  }
 }
 
 .example__subtitle {
@@ -25,6 +30,12 @@
 
 .example__text--style {
   .font_arial(14px; 18px);
+}
+
+.example__container {
+  @media (min-width: @tablet-width) {
+    .flex(space-between; center);
+  }
 }
 
 .example__list {
@@ -69,6 +80,11 @@
 .example__price {
   .margin-auto;
   .flex();
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 19%;
+  }
 }
 
 .example__price--style {

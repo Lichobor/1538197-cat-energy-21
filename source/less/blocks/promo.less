@@ -1,7 +1,7 @@
 .promo__wrapper {
   position: relative;
   width: 320px;
-  height: 440px;
+  height: 476px;
   background-image: url("../img/index-background-desktop-2.jpg");
   background-repeat: no-repeat;
   z-index: 1;
@@ -16,6 +16,17 @@
     left: 0;
     background-color: rgba(104, 183, 56, 0.85);
     background-size: 300px 302px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 810px;
+    .padding-tablet();
+    background: none;
   }
 }
 
@@ -27,26 +38,53 @@
 }
 
 .promo__slogan--style {
-  display: flex;
-  flex-wrap: wrap;
+  .flex();
   position: relative;
   .font_oswald-white-big(14px; 14px);
-  justify-content: center;
-  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__slogan--style {
+    .font_oswald-black-big(20px; 20px);
+    padding: 20px 0;
+    width: 528px;
+    justify-content: start;
+    .margin-auto;
+  }
 }
 
 .promo__image {
   position: absolute;
   left: 20px;
   z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    transform: scale(2.3);
+    top: 420px;
+    left: 270px;
+  }
 }
 
 .promo__button {
   .margin-auto();
   .padding-mobile();
-  margin-bottom: 20px;
+  margin-top: 300px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    margin-left: 85px;
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .button--promo-style {
   .font_oswald-white-big(14px; 14px);
+}
+
+@media (min-width: @tablet-width) {
+  .button--promo-style {
+    .font_oswald-white-big(20px; 20px);
+    width: 240px;
+  }
 }

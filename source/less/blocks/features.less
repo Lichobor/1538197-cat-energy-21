@@ -16,6 +16,11 @@
 
 .features__list {
   .list-style();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -24,6 +29,11 @@
   padding-left: 80px;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 25%;
+    margin-top: 80px;
+  }
 }
 
 .features__item--style::before {
@@ -37,28 +47,55 @@
   bottom: -3px;
 }
 
+@media (min-width: @tablet-width) {
+  .features__item--style::before {
+    left: 80px;
+    bottom: 100px;
+  }
+}
+
 .features__item--helpful::after {
   content: "";
   .features-after();
   background: url("../img/icon_helpful.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 93px;
+    bottom: 112px;
+  }
 }
 
 .features__item--simply::after {
   content: "";
   .features-after();
   background: url("../img/icon_simply.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 93px;
+    bottom: 112px;
+  }
 }
 
 .features__item--tasty::after {
   content: "";
   .features-after();
   background: url("../img/icon_tasty.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 93px;
+    bottom: 112px;
+  }
 }
 
 .features__item--quickly::after {
   content: "";
   .features-after();
   background: url("../img/icon_quickly.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 93px;
+    bottom: 112px;
+  }
 }
 
 .features__description--style {
