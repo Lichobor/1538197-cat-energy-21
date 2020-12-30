@@ -9,11 +9,19 @@
   background: url("../img/mobile_map-marker.png"), url("../img/mobile_map.jpg");
   background-repeat: no-repeat;
   background-position: top 139px left 134px, center;
-}
 
-@media (min-width: @tablet-width) {
-  .location__map--style {
+  @media (min-width: @tablet-width) {
     width: 768px;
     height: 400px;
+    background: url("../img/mobile_map-marker.png"), url("../img/tablet_map.png");
+    background-repeat: no-repeat;
+    background-position: top 200px left 350px, center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    background: url("../img/mobile_map-marker.png"), url("../img/desktop_map.png");
+    background-repeat: no-repeat;
+    background-position: top 170px left 900px, center;
   }
 }

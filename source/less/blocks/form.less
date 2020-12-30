@@ -139,10 +139,10 @@
 .form__additive-wrapper {
   display: grid;
   row-gap: 30px;
-  .outline(@blue);
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -160,8 +160,15 @@
 
   label {
     .font_oswald-black-big(16px; 18px);
-    .outline(@yellow);
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
   }
+}
+
+.form__note-wrapper {
+  .flex(space-between; center);
 }
 
 .form__button {

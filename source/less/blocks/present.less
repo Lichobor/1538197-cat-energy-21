@@ -1,13 +1,25 @@
-.present__image {
-  .margin-auto;
+.present__wrapper {
+  .padding-mobile;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .outline(@red);
+  }
+}
+
+.present__image {
+  .margin-auto;
 }
 
 .present__image--style {
   position: relative;
   width: 280px;
-  height: 289px;
+  height: 369px;
   background-image: url("@{path-to-img}/icon_present.svg"),
     url("@{path-to-img}/mobile_present-cat.jpg");
   background-repeat: no-repeat no-repeat;

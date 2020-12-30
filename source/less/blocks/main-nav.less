@@ -28,11 +28,15 @@
 .main-nav__list--style {
   .list-style();
   .font_oswald-black-medium(20px; 20px);
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav__list--style {
+  @media (min-width: @tablet-width) {
     .font_oswald-black-big(18px; 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .font_oswald-white-big(20px; 30px);
+    position: relative;
+    z-index: 5;
   }
 }
 

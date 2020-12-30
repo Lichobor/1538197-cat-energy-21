@@ -2,6 +2,16 @@
   .margin-auto;
   .padding-mobile;
   padding-bottom: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    .padding-desktop;
+  }
 }
 
 .features__subtitle {
@@ -20,6 +30,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -31,8 +42,13 @@
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    width: 25%;
+    width: 35%;
     margin-top: 80px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
   }
 }
 
@@ -49,7 +65,7 @@
 
 @media (min-width: @tablet-width) {
   .features__item--style::before {
-    left: 80px;
+    left: 0;
     bottom: 100px;
   }
 }
@@ -60,7 +76,7 @@
   background: url("../img/icon_helpful.svg") no-repeat center;
 
   @media (min-width: @tablet-width) {
-    left: 93px;
+    left: 12;
     bottom: 112px;
   }
 }
@@ -71,7 +87,7 @@
   background: url("../img/icon_simply.svg") no-repeat center;
 
   @media (min-width: @tablet-width) {
-    left: 93px;
+    left: 12px;
     bottom: 112px;
   }
 }
@@ -82,7 +98,7 @@
   background: url("../img/icon_tasty.svg") no-repeat center;
 
   @media (min-width: @tablet-width) {
-    left: 93px;
+    left: 12px;
     bottom: 112px;
   }
 }
@@ -93,11 +109,15 @@
   background: url("../img/icon_quickly.svg") no-repeat center;
 
   @media (min-width: @tablet-width) {
-    left: 93px;
+    left: 12px;
     bottom: 112px;
   }
 }
 
 .features__description--style {
   .font_arial(14px; 18px);
+
+  @media (min-width: @tablet-width) {
+    .font_arial(16px; 24px);
+  }
 }

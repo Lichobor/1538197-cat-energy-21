@@ -1,9 +1,20 @@
 .basic-products__wrapper {
   .margin-auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet();
+  }
 }
 
 .basic-products__items {
   .list-style();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
 }
 
 .basic-products__item {

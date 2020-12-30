@@ -1,6 +1,11 @@
-.additional-products {
+.additional-products__wrapper {
   width: 280px;
   .margin-auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
 }
 
 .additional-products__title {
@@ -42,4 +47,8 @@
 
 .button--additional-products-style {
   .font_oswald-white-big(16px; 20px);
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
 }
