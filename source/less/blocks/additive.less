@@ -1,0 +1,36 @@
+.form__additive {
+  margin: 0;
+  padding: 0;
+}
+
+.additive__wrapper {
+  display: grid;
+  row-gap: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.additive {
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  legend {
+    .font-main(24px; 26px);
+  }
+
+  input {
+    .visually-hidden;
+  }
+
+  label {
+    .font-main(16px; 18px);
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
+  }
+}

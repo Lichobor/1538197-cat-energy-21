@@ -1,17 +1,18 @@
-.page-main__title {
+.page-main__title-main {
   position: relative;
-  .margin-auto();
+  margin: 0 auto;
   z-index: 2;
 }
 
-.page-main__title--style {
+.title-main {
   .flex();
-  .font_oswald-white-norm(36px; 36px);
+  .font-main(36px; 36px);
+  color: @white;
   padding-top: 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    .font_oswald-black-norm(60px; 60px);
+    .font-main(60px; 60px);
     text-align: start;
     width: 528px;
     padding-bottom: 30px;
@@ -23,15 +24,15 @@
   }
 }
 
-.page-main__title--catalog {
-  .font_oswald-black-norm(36px; 36px);
-  .padding-mobile();
+.title-main--catalog {
+  .font-main(36px; 36px);
+  padding: @padding-mobile;
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid @special_grey_1;
   justify-content: flex-start;
 
   @media (min-width: @tablet-width) {
-    .font_oswald-black-norm(60px; 60px);
+    .font-main(60px; 60px);
   }
 }

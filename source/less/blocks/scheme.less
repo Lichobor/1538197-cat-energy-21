@@ -1,0 +1,51 @@
+.form__scheme {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.scheme {
+  .font-main(16px; 18px);
+  text-transform: uppercase;
+  color: @special_dark_grey_2;
+  display: grid;
+  justify-content: space-between;
+  row-gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  input {
+    .visually-hidden;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding-left: 65px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: @white;
+      border-radius: 50%;
+      border: 1px solid @special_grey;
+      top: -7px;
+      left: 0;
+    }
+  }
+
+  input:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: @basic_green;
+    border-radius: 50%;
+    top: 2px;
+    left: 9px;
+  }
+}

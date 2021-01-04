@@ -1,0 +1,35 @@
+.form__owner {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.owner__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 15px;
+}
+
+.owner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  legend {
+    .font-main(24px; 26px);
+  }
+
+  label {
+    .font-main(16px; 18px);
+    color: @special_dark_grey;
+    text-transform: uppercase;
+    height: 45px;
+  }
+
+  input {
+    .font-main(16px; 18px);
+    color: @special_dark_grey;
+    text-transform: uppercase;
+    height: 45px;
+  }
+}

@@ -1,11 +1,11 @@
 .present__wrapper {
-  .padding-mobile;
+  padding: @padding-mobile;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    .padding-tablet;
+    padding: @padding-tablet;
     padding-top: 40px;
     padding-bottom: 40px;
     .outline(@red);
@@ -13,10 +13,7 @@
 }
 
 .present__image {
-  .margin-auto;
-}
-
-.present__image--style {
+  margin: 0 auto;
   position: relative;
   width: 280px;
   height: 369px;
@@ -28,16 +25,13 @@
 
 .present__text {
   position: absolute;
+  .font-secondary(16px; 20px);
+  color: @white;
+  text-align: center;
   .flex;
   width: 161px;
   min-height: 60px;
   overflow: hidden;
   top: 170px;
   left: 60px;
-}
-
-.present__text--style {
-  .font_arial(16px; 20px);
-  color: @white;
-  text-align: center;
 }

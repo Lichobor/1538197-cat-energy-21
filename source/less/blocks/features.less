@@ -1,27 +1,27 @@
 .features__wrapper {
-  .margin-auto;
-  .padding-mobile;
+  margin: 0 auto;
+  padding: @padding-mobile;
   padding-bottom: 1px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    .padding-tablet;
+    padding: @padding-tablet;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
-    .padding-desktop;
+    padding: @padding-desktop;
   }
 }
 
-.features__subtitle {
+.features__features-subtitle {
   margin: 0;
   margin-bottom: 26px;
 }
 
-.features__subtitle--style {
+.features-subtitle {
   .flex(flex-start);
-  .font_oswald-black-norm(36px; 40px);
+  .font-main(36px; 40px);
 }
 
 .features__list {
@@ -34,7 +34,7 @@
   }
 }
 
-.features__item {
+.features__features-item {
   display: block;
   position: relative;
   padding-left: 80px;
@@ -52,7 +52,7 @@
   }
 }
 
-.features__item--style::before {
+.features-item::before {
   content: "";
   display: block;
   position: absolute;
@@ -64,13 +64,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .features__item--style::before {
+  .features-item::before {
     left: 0;
     bottom: 100px;
   }
 }
 
-.features__item--helpful::after {
+.features-item--helpful::after {
   content: "";
   .features-after();
   background: url("../img/icon_helpful.svg") no-repeat center;
@@ -81,7 +81,7 @@
   }
 }
 
-.features__item--simply::after {
+.features-item--simply::after {
   content: "";
   .features-after();
   background: url("../img/icon_simply.svg") no-repeat center;
@@ -92,7 +92,7 @@
   }
 }
 
-.features__item--tasty::after {
+.features-item--tasty::after {
   content: "";
   .features-after();
   background: url("../img/icon_tasty.svg") no-repeat center;
@@ -103,7 +103,7 @@
   }
 }
 
-.features__item--quickly::after {
+.features-item--quickly::after {
   content: "";
   .features-after();
   background: url("../img/icon_quickly.svg") no-repeat center;
@@ -114,10 +114,10 @@
   }
 }
 
-.features__description--style {
-  .font_arial(14px; 18px);
+.features-description {
+  .font-secondary(14px; 18px);
 
   @media (min-width: @tablet-width) {
-    .font_arial(16px; 24px);
+    .font-secondary(16px; 24px);
   }
 }
