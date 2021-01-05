@@ -50,15 +50,15 @@
         </h2>
         <form action="#" method="POST">
           <fieldset class="form__data data">
-            <div class="data__wrapper">
+            <div class="data__field-wrapper">
               <label for="animal-name">Имя:*</label>
               <input type="text" name="animal" id="animal-name" value="Барсик" required>
             </div>
-            <div class="data__wrapper">
+            <div class="data__field-wrapper">
               <label for="animal-weight">Вес (кг):*</label>
               <input type="text" name="weight" id="animal-weight" value="7" required>
             </div>
-            <div class="data__wrapper">
+            <div class="data__field-wrapper">
               <label for="animal-years">Возраст (лет):</label>
               <input type="text" name="years" id="animal-years" value="7">
             </div>
@@ -74,20 +74,24 @@
           <fieldset class="form__owner owner">
             <legend>Контактные данные (владельца кота)</legend>
             <div class="owner__wrapper">
-              <label for="owner-mail">E-mail:*</label>
-              <input type="email" name="mail" id="owner-mail" value="KUKLACHEV@GMAIL.COM" required>
-              <label for="owner-phone">Телефон:*</label>
-              <input type="tel" name="phone" id="owner-phone" value="8 (960) 900-60-90" required>
+              <div class="owner__field-wrapper">
+                <label for="owner-mail">E-mail:*</label>
+                <input type="email" name="mail" id="owner-mail" value="KUKLACHEV@GMAIL.COM" required>
+              </div>
+              <div class="owner__field-wrapper">
+                <label for="owner-phone">Телефон:*</label>
+                <input type="tel" name="phone" id="owner-phone" value="8 (960) 900-60-90" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__comment comment">
             <legend>Комментарий</legend>
-            <textarea name="comment" id="owner-comment" cols="33" rows="5">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+            <textarea name="comment" id="owner-comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__additive additive">
             <legend>Дополнительно</legend>
             <div class="additive__wrapper">
-              <input type="checkbox" name="sugar" id="add-sugar">
+              <input type="checkbox" name="sugar" id="add-sugar" checked>
               <label for="add-sugar">Сахарозаменитель</label>
               <input type="checkbox" name="water" id="add-water">
               <label for="add-water">Питьевая вода</label>

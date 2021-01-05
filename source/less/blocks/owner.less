@@ -6,9 +6,14 @@
 
 .owner__wrapper {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
   row-gap: 15px;
+}
+
+.owner__field-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+  align-items: center;
 }
 
 .owner {
@@ -16,14 +21,25 @@
   padding-bottom: 20px;
 
   legend {
+    position: relative;
     .font-main(24px; 26px);
   }
 
+  legend::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: @basic_green;
+    right: -20px;
+    top: 15px;
+  }
+
   label {
+    display: inline-block;
     .font-main(16px; 18px);
     color: @special_dark_grey;
     text-transform: uppercase;
-    height: 45px;
   }
 
   input {
@@ -31,5 +47,15 @@
     color: @special_dark_grey;
     text-transform: uppercase;
     height: 45px;
+    border: 1px solid @special_grey;
+    padding: 0 15px;
+  }
+
+  input[type="email"] {
+    background: url("@{path-to-img}/icon_mail.svg") no-repeat 92% 50%;
+  }
+
+  input[type="tel"] {
+    background: url("@{path-to-img}/icon_phone.svg") no-repeat 92% 50%;
   }
 }

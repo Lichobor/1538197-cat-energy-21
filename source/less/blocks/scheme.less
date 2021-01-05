@@ -25,27 +25,27 @@
 
     &::before {
       content: "";
-      display: block;
+      display: inline-block;
       position: absolute;
       width: 30px;
       height: 30px;
       background-color: @white;
       border-radius: 50%;
       border: 1px solid @special_grey;
-      top: -7px;
+      top: -5px;
       left: 0;
     }
   }
 
   input:checked + label::after {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
     width: 13px;
     height: 13px;
     background-color: @basic_green;
     border-radius: 50%;
-    top: 2px;
+    top: 4px;
     left: 9px;
   }
 }

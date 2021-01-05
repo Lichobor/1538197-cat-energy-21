@@ -18,7 +18,18 @@
   padding-bottom: 40px;
 
   legend {
+    position: relative;
     .font-main(24px; 26px);
+  }
+
+  legend::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: @basic_green;
+    left: 160px;
+    top: 15px;
   }
 
   input {
@@ -26,11 +37,37 @@
   }
 
   label {
+    position: relative;
     .font-main(16px; 18px);
     text-transform: uppercase;
+    padding-left: 45px;
 
     @media (min-width: @tablet-width) {
       width: 50%;
     }
+  }
+
+  label::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @special_grey;
+    top: -6px;
+    left: 0;
+  }
+
+  input:checked + label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    border-right: 2px solid @basic_green;
+    border-bottom: 2px solid @basic_green;
+    transform: rotate(45deg);
+    left: 10px;
+    top: -5px;
   }
 }
