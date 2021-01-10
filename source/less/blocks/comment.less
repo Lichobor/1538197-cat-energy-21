@@ -4,6 +4,10 @@
   margin-bottom: 30px;
 }
 
+.comment__wrapper {
+  padding: 50px 0;
+}
+
 .comment {
   .font-main(24px; 26px);
   padding-top: 40px;
@@ -26,6 +30,24 @@
       left: 215px;
       top: 20px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 1110px;
+      left: 220px;
+    }
+  }
+
+  legend::before {
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: @basic_green;
+      left: -110px;
+      top: 20px;
+    }
   }
 
   textarea {
@@ -42,9 +64,14 @@
       .font-main(20px; 30px);
       width: 635px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 1220px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     .font-main(36px; 36px);
+
   }
 }

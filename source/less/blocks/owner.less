@@ -7,6 +7,13 @@
 .owner__wrapper {
   display: grid;
   row-gap: 15px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding: 70px 0;
+  }
+
 }
 
 .owner__field-wrapper {
@@ -41,6 +48,24 @@
     @media (min-width: @tablet-width) {
       width: 145px;
       right: -180px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 780px;
+      left: 550px;
+    }
+  }
+
+  legend::before {
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: @basic_green;
+      left: -110px;
+      top: 20px;
     }
   }
 

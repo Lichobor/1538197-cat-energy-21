@@ -11,6 +11,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    padding: 40px 0;
+  }
 }
 
 .additive {
@@ -38,6 +43,24 @@
     @media (min-width: @tablet-width) {
       width: 445px;
       left: 250px;
+      top: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1080px;
+      left: 250px;
+    }
+  }
+
+  legend::before {
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: @basic_green;
+      left: -110px;
       top: 20px;
     }
   }
@@ -69,7 +92,7 @@
     left: 0;
   }
 
-  input:checked + label::after {
+  input:checked+label::after {
     content: "";
     position: absolute;
     display: inline-block;
