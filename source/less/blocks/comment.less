@@ -20,6 +20,12 @@
     background-color: @basic_green;
     left: 140px;
     top: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 480px;
+      left: 215px;
+      top: 20px;
+    }
   }
 
   textarea {
@@ -31,5 +37,14 @@
     padding: 10px 12px;
     border: 1px solid @special_white_2;
     resize: none;
+
+    @media (min-width: @tablet-width) {
+      .font-main(20px; 30px);
+      width: 635px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .font-main(36px; 36px);
   }
 }

@@ -1,8 +1,15 @@
 .page-form__title {
-  padding: @padding-mobile;
+  margin: 0;
+  padding: 30px 20px;
   .flex(flex-start);
   .font-main(36px; 36px);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 70px;
+    .font-main(60px; 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 110px;
+  }
 }

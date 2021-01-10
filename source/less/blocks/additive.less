@@ -20,6 +20,10 @@
   legend {
     position: relative;
     .font-main(24px; 26px);
+
+    @media (min-width: @tablet-width) {
+      .font-main(36px; 36px);
+    }
   }
 
   legend::after {
@@ -30,6 +34,12 @@
     background-color: @basic_green;
     left: 160px;
     top: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 445px;
+      left: 250px;
+      top: 20px;
+    }
   }
 
   input {
@@ -44,6 +54,7 @@
 
     @media (min-width: @tablet-width) {
       width: 50%;
+      .font-main(20px; 30px);
     }
   }
 

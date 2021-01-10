@@ -23,6 +23,10 @@
   legend {
     position: relative;
     .font-main(24px; 26px);
+
+    @media (min-width: @tablet-width) {
+      .font-main(36px; 36px);
+    }
   }
 
   legend::after {
@@ -32,7 +36,12 @@
     height: 2px;
     background-color: @basic_green;
     right: -20px;
-    top: 15px;
+    top: 20px;
+
+    @media (min-width: @tablet-width) {
+      width: 145px;
+      right: -180px;
+    }
   }
 
   label {
@@ -40,6 +49,10 @@
     .font-main(16px; 18px);
     color: @special_dark_grey;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      .font-main(20px; 30px);
+    }
   }
 
   input {
@@ -49,6 +62,10 @@
     height: 45px;
     border: 1px solid @special_grey;
     padding: 0 15px;
+
+    @media (min-width: @tablet-width) {
+      .font-main(20px; 30px);
+    }
   }
 
   input[type="email"] {

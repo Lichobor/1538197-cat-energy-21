@@ -8,7 +8,6 @@
   color: @special_dark_grey;
   text-transform: uppercase;
   display: grid;
-
   align-items: center;
   row-gap: 13px;
   padding-top: 20px;
@@ -26,6 +25,10 @@
     text-transform: uppercase;
     padding-left: 15px;
   }
+
+  @media (min-width: @tablet-width) {
+    .font-main(20px; 30px);
+  }
 }
 
 .data__field-wrapper {
@@ -33,4 +36,8 @@
   grid-template-columns: auto 1fr;
   column-gap: 15px;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }

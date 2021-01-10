@@ -49,28 +49,31 @@
           Заполните анкету, и мы подберем<br>программу питания для вашего кота
         </h2>
         <form action="#" method="POST">
-          <fieldset class="form__data data">
-            <div class="data__field-wrapper">
-              <label for="animal-name">Имя:*</label>
-              <input type="text" name="animal" id="animal-name" value="Барсик" required>
-            </div>
-            <div class="data__field-wrapper">
-              <label for="animal-weight">Вес (кг):*</label>
-              <input type="text" name="weight" id="animal-weight" value="7" required>
-            </div>
-            <div class="data__field-wrapper">
-              <label for="animal-years">Возраст (лет):</label>
-              <input type="text" name="years" id="animal-years" value="7">
-            </div>
-          </fieldset>
-          <fieldset class="form__scheme scheme">
-            <input type="radio" name="option" id="option-1" value="slimming" checked>
-            <label for="option-1">Похудение</label>
-            <input type="radio" name="option" id="option-2" value="weight-gain">
-            <label for="option-2">Набор массы</label>
-            <input type="radio" name="option" id="option-3" value="consult">
-            <label for="option-3">Не знаю (нужен ваш совет)</label>
-          </fieldset>
+          <div class="form__data-scheme-wrapper">
+            <fieldset class="form__data data">
+              <div class="data__field-wrapper">
+                <label for="animal-name">Имя:*</label>
+                <input type="text" name="animal" id="animal-name" value="Барсик" required>
+              </div>
+              <div class="data__field-wrapper">
+                <label for="animal-weight">Вес (кг):*</label>
+                <input type="text" name="weight" id="animal-weight" value="7" required>
+              </div>
+              <div class="data__field-wrapper">
+                <label for="animal-years">Возраст (лет):</label>
+                <input type="text" name="years" id="animal-years" value="7">
+              </div>
+            </fieldset>
+            <fieldset class="form__scheme scheme">
+              
+              <input type="radio" name="option" id="option-1" value="slimming" checked>
+              <label for="option-1">Похудение</label>
+              <input type="radio" name="option" id="option-2" value="weight-gain">
+              <label for="option-2">Набор массы</label>
+              <input type="radio" name="option" id="option-3" value="consult">
+              <label for="option-3">Не знаю (нужен ваш совет)</label>
+            </fieldset>
+          </div>
           <fieldset class="form__owner owner">
             <legend>Контактные данные (владельца кота)</legend>
             <div class="owner__wrapper">
