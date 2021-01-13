@@ -13,7 +13,7 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.font_oswald-black-norm(@font; @line) {
+.font-main(@font; @line) {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,64 +22,7 @@
   line-height: @line;
 }
 
-.font_oswald-grey-norm(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @special_dark_grey;
-  font-size: @font;
-  line-height: @line;
-}
-
-.font_oswald-black-big(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @black;
-  font-size: @font;
-  line-height: @line;
-  text-transform: uppercase;
-}
-
-.font_oswald-grey-big(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @special_dark_grey;
-  font-size: @font;
-  line-height: @line;
-  text-transform: uppercase;
-}
-
-.font_oswald-black-medium(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color: @black;
-  font-size: @font;
-  line-height: @line;
-}
-
-.font_oswald-white-norm(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @white;
-  font-size: @font;
-  line-height: @line;
-}
-
-.font_oswald-white-big(@font; @line) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @white;
-  font-size: @font;
-  line-height: @line;
-  text-transform: uppercase;
-}
-
-.font_arial(@font; @line) {
+.font-secondary(@font; @line) {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -88,29 +31,6 @@
   line-height: @line;
 }
 
-.margin-auto() {
-  margin: 0 auto;
-}
-
-.padding-mobile() {
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.padding-tablet() {
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-.padding-desktop() {
-  padding: 0 110px;
-  box-sizing: border-box;
-}
-
-.reset-indents() {
-  margin: 0;
-  padding: 0;
-}
 
 .flex(@justify-content: center; @align-items: stretch) {
   display: flex;

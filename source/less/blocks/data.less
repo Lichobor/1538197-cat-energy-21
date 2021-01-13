@@ -1,0 +1,44 @@
+.form__data {
+  margin: 0;
+  padding: 0;
+}
+
+.data {
+  .font-main(16px; 18px);
+  color: @special_dark_grey;
+  text-transform: uppercase;
+  display: grid;
+  align-items: center;
+  row-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  label {
+    display: inline-block;
+  }
+
+  input {
+    border: 1px solid @special_white_2;
+    height: 46px;
+    font: inherit;
+    color: @special_dark_grey;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font-main(20px; 30px);
+    row-gap: 20px;
+  }
+}
+
+.data__field-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}

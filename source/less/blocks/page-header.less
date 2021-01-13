@@ -9,31 +9,37 @@
 .page-header__container {
   @media (min-width: @tablet-width) {
     .flex(space-between);
-    .padding-tablet();
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: @padding-desktop;
   }
 }
 
 .page-header__wrapper {
-  .padding-mobile();
+  padding: @padding-mobile;
   .flex(space-between; center);
   padding-bottom: 15px;
   padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    width: 33%;
+    width: 20%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 17%;
+    width: 12%;
   }
 }
 
 .page-header__logo {
   .flex(space-between);
   flex-basis: calc(100% / 3 * 2);
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
+  }
 }
 
 .page-header__toggle {

@@ -1,11 +1,15 @@
 .page-form__title {
-  .padding-mobile;
-  margin: 20px 0;
-}
-
-.page-form__title--style {
+  margin: 0;
+  padding: 30px 20px;
   .flex(flex-start);
-  .font_oswald-black-norm(36px; 36px);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  .font-main(36px; 36px);
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 70px;
+    .font-main(60px; 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 110px;
+  }
 }
