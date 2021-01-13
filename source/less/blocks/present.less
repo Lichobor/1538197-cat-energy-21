@@ -21,6 +21,12 @@
     url("@{path-to-img}/mobile_present-cat.jpg");
   background-repeat: no-repeat no-repeat;
   background-position: 100px 60px, center;
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 290px;
+    margin-top: 80px;
+  }
 }
 
 .present__text {
