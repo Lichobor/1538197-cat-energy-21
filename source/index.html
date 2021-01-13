@@ -3,40 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo" href="#">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
-        <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    <nav class="page-header__main-nav main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--style">
-          <li class="main-nav__item main-nav__item--style main-nav__item--active">
-            <a class="main-nav__link main-nav__link--style" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--style">
-            <a class="main-nav__link main-nav__link--style" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--style">
-            <a class="main-nav__link main-nav__link--style" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="#">
+          <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
+          <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-    </nav>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--style">
+            <li class="main-nav__item main-nav__item--style main-nav__item--active">
+              <a class="main-nav__link main-nav__link--style" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--style">
+              <a class="main-nav__link main-nav__link--style" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--style">
+              <a class="main-nav__link main-nav__link--style" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="page-main__promo promo">
@@ -44,25 +47,26 @@
         <h1 class="page-main__title page-main__title--style">Функциональное питание для котов</h1>
         <h2 class="visually-hidden">Выбор программы</h2>
         <p class="promo__slogan promo__slogan--style">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="../img/index-can-mobile-1.png" width="280" height="270" alt="Кэт Энерджи Про">
+        <a class="promo__button button button--promo-style" href="form.html">Подобрать программу</a>
       </div>
-      <a class="promo__link promo__link--style" href="form.html">Подобрать программу</a>
     </section>
     <section class="page-main__program program">
       <div class="program__wrapper">
         <ul class="program__list">
           <li class="program__item program__item--style">
             <h3 class="program__title program__title--style program__title--slim">Похудение</h3>
-            <p class="program__description program__description--style">Ваш кот весит больше собаки и<br>
-              почти утратил способность лазить<br>по деревьям? Пора на диету! Cat<br>
-              Energy Slim поможет вашему<br>питомцу сбросить лишний вес.
+            <p class="program__description program__description--style program__description--slim">Ваш кот весит больше
+              собаки и почти утратил
+              способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="program__link program__link--style" href="catalog.html">Каталог Slim</a>
           </li>
           <li class="program__item program__item--style">
             <h3 class="program__title program__title--style program__title--pro">Набор массы</h3>
-            <p class="program__description program__description--style">Заработать авторитет среди<br>
-              дворовых котов и даже собак?<br>Серия Cat Energy Pro поможет<br>вашему коту нарастить<br>
-              необходимые мышцы.
+            <p class="program__description program__description--style program__description--pro">Заработать авторитет
+              среди дворовых котов
+              и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы.
             </p>
             <a class="program__link program__link--style" href="catalog.html">Каталог Pro</a>
           </li>
@@ -99,40 +103,48 @@
     </section>
     <section class="page-main__example example">
       <div class="example__wrapper">
-        <header class="example__header">
-          <h2 class="visually-hidden">Результат программы</h2>
-          <p class="example__subtitle example__subtitle--style">Живой пример</p>
-        </header>
-        <p class="example__text example__text--style">Борис сбросил 5 кг за 2 месяца, просто заменив
-          свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="example__list">
-          <li class="example__item example__item--style">
-            <p class="example__value example__value--style">5 кг</dt>
-            <p class="example__description example__description--style">Снижение веса</dd>
-          </li>
-          <li class="example__item example__item--style">
-            <p class="example__value example__value--style">60 дней</p>
-            <p class="example__description example__description--style">Затрачено времени</p>
-          </li>
-        </ul>
-        <p class="example__price example__price--style">Затраты на питание: 15 000 руб.</p>
-        <div class="example__slider">
-          <ul class="example__slider-list">
-            <li class="example__slide example__slide--style example__slide--before">
-              <img src="../img/mobile_fat-cat.png" width="311" height="232" alt="Толстый кот">
-            </li>
-            <li class="example__slide example__slide--style example__slide--after">
-              <img src="../img/mobile_gracile-cat.png" width="251" height="240" alt="Изящный кот">
-            </li>
-          </ul>
-          <div class="example__control example__control--style">
-            <p class="example__control--before">Было</p>
-            <div class="example__scale example__scale--style">
-              <div class="example__bar example__bar--style"></div>
+        <div class="example__desktop-wrapper">
+          <div class="example__desktop-container-1">
+            <header class="example__header">
+              <h2 class="visually-hidden">Результат программы</h2>
+              <p class="example__subtitle example__subtitle--style">Живой пример</p>
+            </header>
+            <p class="example__text example__text--style">Борис сбросил 5 кг за 2 месяца, просто заменив
+              свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="example__container">
+              <ul class="example__list">
+                <li class="example__item example__item--style">
+                  <p class="example__value example__value--style">5 кг</dt>
+                  <p class="example__description example__description--style">Снижение веса</dd>
+                </li>
+                <li class="example__item example__item--style">
+                  <p class="example__value example__value--style">60 дней</p>
+                  <p class="example__description example__description--style">Затрачено времени</p>
+                </li>
+              </ul>
+              <p class="example__price example__price--style">Затраты на питание: 15 000 руб.</p>
             </div>
-            <p class="example__control--after">Стало</p>
+          </div>
+          <div class="example__desktop-container-2">
+            <div class="example__slider">
+              <ul class="example__slider-list">
+                <li class="example__slide example__slide--style example__slide--before">
+                  <img src="../img/mobile_fat-cat.png" width="311" height="232" alt="Толстый кот">
+                </li>
+                <li class="example__slide example__slide--style example__slide--after">
+                  <img src="../img/mobile_gracile-cat.png" width="251" height="240" alt="Изящный кот">
+                </li>
+              </ul>
+              <div class="example__control example__control--style">
+                <p class="example__control--before">Было</p>
+                <div class="example__scale example__scale--style">
+                  <div class="example__bar example__bar--style"></div>
+                </div>
+                <p class="example__control--after">Стало</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -147,6 +159,7 @@
     </section>
     <section class="page-main__location location">
       <div class="location__wrapper">
+        <h2 class="visually-hidden">Карта</h2>
         <div class="location__map location__map--style"></div>
       </div>
     </section>

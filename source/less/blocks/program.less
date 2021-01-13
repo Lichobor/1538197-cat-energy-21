@@ -1,0 +1,217 @@
+.program__wrapper {
+  .margin-auto;
+  .padding-mobile;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    .padding-desktop;
+  }
+}
+
+.program__list {
+  .list-style();
+
+  @media (min-width: @desktop-width) {
+    .flex(space-between);
+  }
+}
+
+.program__item {
+  margin-bottom: 20px;
+  background-color: @basic_grey;
+  padding-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 45%;
+    height: 375px;
+    padding-top: 50px;
+  }
+}
+
+.program__title {
+  .flex(flex-start);
+  position: relative;
+  padding-left: 90px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 170px;
+  }
+}
+
+.program__title--style {
+  .font_oswald-black-big(24px; 37px);
+
+  @media (min-width: @tablet-width) {
+    .font_oswald-black-big(36px; 36px);
+  }
+}
+
+.program__title--slim::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 20px;
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+    top: -35px;
+  }
+}
+
+.program__title--pro::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 10px;
+  top: -7px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+    top: -20px;
+  }
+}
+
+.program__description {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.program__description--style {
+  .font_arial(14px; 18px);
+  border-bottom: 1px solid @special_grey_3;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    .font_arial(16px; 24px);
+    border-bottom: none;
+  }
+}
+
+.program__description--slim {
+  @media (min-width: @tablet-width) {
+    padding-right: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px;
+    padding-top: 50px;
+  }
+}
+
+.program__description--pro {
+  @media (min-width: @tablet-width) {
+    padding-right: 290px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px;
+    padding-top: 50px;
+  }
+}
+
+.program__description--slim::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat_slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    bottom: -25px;
+    right: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.program__description--pro::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/cat_pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    bottom: -35px;
+    right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.program__link {
+  position: relative;
+  padding: 20px;
+}
+
+.program__link--style {
+  display: block;
+  .font_oswald-black-big(16px; 16px);
+  height: 56px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    .font_oswald-black-big(20px; 30px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    background: url("../img/icon_slim-link.svg") no-repeat center;
+    left: 120px;
+
+    @media (min-width: @tablet-width) {
+      left: 150px;
+      bottom: 20px;
+    }
+  }
+}

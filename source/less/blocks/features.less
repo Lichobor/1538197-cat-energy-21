@@ -1,0 +1,123 @@
+.features__wrapper {
+  .margin-auto;
+  .padding-mobile;
+  padding-bottom: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    .padding-desktop;
+  }
+}
+
+.features__subtitle {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.features__subtitle--style {
+  .flex(flex-start);
+  .font_oswald-black-norm(36px; 40px);
+}
+
+.features__list {
+  .list-style();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 35%;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
+  }
+}
+
+.features__item--style::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  left: 0;
+  bottom: -3px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__item--style::before {
+    left: 0;
+    bottom: 100px;
+  }
+}
+
+.features__item--helpful::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_helpful.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 12;
+    bottom: 112px;
+  }
+}
+
+.features__item--simply::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_simply.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 12px;
+    bottom: 112px;
+  }
+}
+
+.features__item--tasty::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_tasty.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 12px;
+    bottom: 112px;
+  }
+}
+
+.features__item--quickly::after {
+  content: "";
+  .features-after();
+  background: url("../img/icon_quickly.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    left: 12px;
+    bottom: 112px;
+  }
+}
+
+.features__description--style {
+  .font_arial(14px; 18px);
+
+  @media (min-width: @tablet-width) {
+    .font_arial(16px; 24px);
+  }
+}

@@ -3,40 +3,43 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo" href="#">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
-        <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    <nav class="page-header__main-nav main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--style">
-          <li class="main-nav__item main-nav__item--style main-nav__item--active">
-            <a class="main-nav__link main-nav__link--style" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--style">
-            <a class="main-nav__link main-nav__link--style" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--style">
-            <a class="main-nav__link main-nav__link--style" href=" #">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="#">
+          <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
+          <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-    </nav>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--style">
+            <li class="main-nav__item main-nav__item--style main-nav__item--active">
+              <a class="main-nav__link main-nav__link--style" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--style">
+              <a class="main-nav__link main-nav__link--style" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--style">
+              <a class="main-nav__link main-nav__link--style" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-form">
     <h1 class="page-form__title page-form__title--style">Подбор программы</h1>
@@ -77,7 +80,7 @@
           </fieldset>
           <fieldset class="form__additive form__additive--style">
             <legend>Дополнительно</legend>
-            <div class="form__additive--wrapper">
+            <div class="form__additive-wrapper">
               <input type="checkbox" name="sugar" id="add-sugar">
               <label for="add-sugar">Сахарозаменитель</label>
               <input type="checkbox" name="water" id="add-water">
@@ -88,8 +91,10 @@
               <label for="add-vitamins">Витамины</label>
             </div>
           </fieldset>
-          <input type="submit" class="form__button form__button--style" value="Отправить заявку"></input>
-          <p class="form__note">* &mdash; Обязательные поля</p>
+          <div class="form__note-wrapper">
+            <button type="submit" class="form__button button button--form-style">Отправить заявку</button>
+            <p class="form__note">* &mdash; Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
@@ -103,6 +108,7 @@
     </section>
     <section class="page-main__location location">
       <div class="location__wrapper">
+        <h2 class="visually-hidden">Карта</h2>
         <div class="location__map location__map--style"></div>
       </div>
     </section>

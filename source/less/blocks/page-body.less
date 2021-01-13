@@ -1,9 +1,17 @@
 .page-body {
-  .center-1();
+  .margin-auto();
   .outline(@green);
   background-color: @white;
   min-height: 100%;
   width: 320px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }

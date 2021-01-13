@@ -26,7 +26,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: @special_dark-grey;
+  color: @special_dark_grey;
   font-size: @font;
   line-height: @line;
 }
@@ -45,7 +45,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: @special_dark-grey;
+  color: @special_dark_grey;
   font-size: @font;
   line-height: @line;
   text-transform: uppercase;
@@ -83,21 +83,31 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: @special_dark-grey;
+  color: @special_dark_grey;
   font-size: @font;
   line-height: @line;
 }
 
-.center-1() {
+.margin-auto() {
   margin: 0 auto;
 }
 
-.center-2() {
+.padding-mobile() {
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-.center-3() {
+.padding-tablet() {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.padding-desktop() {
+  padding: 0 110px;
+  box-sizing: border-box;
+}
+
+.reset-indents() {
   margin: 0;
   padding: 0;
 }
@@ -118,16 +128,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.button() {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 40px;
-  background-color: @basic_green;
 }
 
 .features-after() {
