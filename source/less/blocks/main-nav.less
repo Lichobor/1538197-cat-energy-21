@@ -1,5 +1,13 @@
 .main-nav {
-  display: none;
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -45,7 +53,7 @@
 }
 
 .navigation-item {
-  border-bottom: 1px solid @special_white;
+  border-top: 1px solid @special_white;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
