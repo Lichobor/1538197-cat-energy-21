@@ -34,6 +34,18 @@
   }
 }
 
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  cursor: pointer;
+}
+
 .page-header__toggle {
   &--open {
     display: block;
@@ -58,13 +70,14 @@
     background-color: @white;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1.5px solid @black;
     border: none;
     outline: none;
     cursor: pointer;
-
   }
 
+  &--nojs {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

@@ -210,12 +210,20 @@
     position: absolute;
     width: 32px;
     height: 10px;
-    background: url("../img/icon_slim-link.svg") no-repeat center;
+    background: url("../img/icon_arrow-short.svg") no-repeat center;
     left: 120px;
 
     @media (min-width: @tablet-width) {
       left: 150px;
       bottom: 20px;
     }
+  }
+
+  &:hover::after {
+    background: url("../img/icon_arrow-long.svg") no-repeat center;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

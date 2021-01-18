@@ -27,22 +27,19 @@
 
 .copyright {
   .font-secondary(16px; 18px);
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  .flex(space-between; center);
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    background: url("@{path-to-img}/html-academy_logo.svg") no-repeat center;
-    bottom: 20px;
-    right: 0;
+  &:hover path {
+    fill: @basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
-    padding-right: 60px;
+    width: 164px;
   }
 }

@@ -1,6 +1,24 @@
 .social {
   .list-style;
-  .flex(space-between);
-  padding: 25px 90px;
+  .flex(center; center);
+  padding-top: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid @special_grey_3;
+}
+
+.social__social-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.social-link--vkontakte:hover path,
+.social-link--instagram:hover path {
+  fill: @basic_green;
+}
+
+.social-link--facebook:hover path {
+  stroke: @basic_green;
+}
+
+.social-link:active {
+  opacity: 0.3;
 }
