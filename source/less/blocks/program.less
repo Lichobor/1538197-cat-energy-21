@@ -1,8 +1,8 @@
 .program__wrapper {
   margin: 0 auto;
   padding: @padding-mobile;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -17,6 +17,11 @@
 
 .program__list {
   .list-style();
+  margin-top: -20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -30px;
+  }
 
   @media (min-width: @desktop-width) {
     .flex(space-between);
@@ -24,12 +29,16 @@
 }
 
 .program__program-item {
-  margin-bottom: 20px;
+  height: 265px;
+  margin-top: 20px;
   background-color: @basic_grey;
-  padding-top: 6px;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
+    min-height: 370px;
+    margin-top: 30px;
     padding-left: 30px;
+    padding-top: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +49,7 @@
 }
 
 .program__program-title {
+  margin: 0;
   .flex(flex-start);
   position: relative;
   padding-left: 90px;
@@ -112,14 +122,20 @@
 }
 
 .program__program-description {
+  margin-top: 10px;
   padding: 20px;
-  box-sizing: border-box;
-  margin: 0;
+  padding-bottom: 23px;
 }
 
+.program-description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
 .program-description {
   .font-secondary(14px; 18px);
   border-bottom: 1px solid @special_grey_3;
+
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -180,7 +196,7 @@
     background-position: center;
     background-size: contain;
     bottom: -35px;
-    right: 22px;
+    right: 27px;
   }
 
   @media (min-width: @desktop-width) {
@@ -190,7 +206,8 @@
 
 .program__program-link {
   position: relative;
-  padding: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 
 .program-link {
@@ -215,7 +232,7 @@
 
     @media (min-width: @tablet-width) {
       left: 150px;
-      bottom: 20px;
+      bottom: 30px;
     }
   }
 
