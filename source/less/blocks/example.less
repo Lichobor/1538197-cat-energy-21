@@ -20,7 +20,7 @@
     width: 1440px;
     height: 660px;
     padding: @padding-desktop;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 40px;
   }
 }
@@ -29,24 +29,30 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     .flex(space-between; center);
+
   }
 }
 
 .example__desktop-container-1 {
   @media (min-width: @desktop-width) {
-    width: 40%;
+    width: 50%;
   }
 }
 
 .example__desktop-container-2 {
   @media (min-width: @desktop-width) {
-    width: 40%;
+    width: 50%;
   }
 }
 
 .example__example-subtitle {
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 150px;
+    margin-top: 50px;
+  }
 }
 
 .example-subtitle {
@@ -72,6 +78,10 @@
 
   @media (min-width: @tablet-width) {
     .font-secondary(16px; 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
   }
 }
 
@@ -99,6 +109,10 @@
   @media (min-width: @tablet-width) {
     grid-gap: 45px;
     margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 25px;
   }
 }
 
@@ -182,12 +196,21 @@
     .font-main(20px; 20px);
     text-transform: uppercase;
   }
+
+  @media (min-width: @desktop-width) {
+    .flex(flex-start; center);
+    margin-top: 40px;
+  }
 }
 
 .example-price__text {
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -197,6 +220,11 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: 10px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      margin-left: 65px;
+    }
   }
 }
 
@@ -223,8 +251,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    transform: scale(2.2);
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+    margin-right: 20px;
   }
 }
 
@@ -235,6 +265,10 @@
 .example__example-control {
   .flex(space-around; center);
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 30px;
+  }
 }
 
 .example-control {

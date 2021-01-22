@@ -1,15 +1,24 @@
 .form__additive {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .additive__wrapper {
   display: grid;
-  row-gap: 30px;
+  row-gap: 25px;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 35px;
+    row-gap: 40px;
+    column-gap: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,8 +84,8 @@
     padding-left: 45px;
 
     @media (min-width: @tablet-width) {
-      width: 50%;
       .font-main(20px; 30px);
+      padding-left: 55px;
     }
   }
 
@@ -89,6 +98,11 @@
     border: 1px solid @special_grey;
     top: -6px;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   input:checked + label::after {
@@ -102,5 +116,10 @@
     transform: rotate(45deg);
     left: 10px;
     top: -5px;
+
+    @media (min-width: @tablet-width) {
+      left: 15px;
+      top: 0;
+    }
   }
 }

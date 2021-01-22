@@ -61,6 +61,10 @@
   @media (min-width: @tablet-width) {
     border: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
 
 .main-nav__navigation-link {
@@ -74,4 +78,25 @@
   height: 66px;
   padding: 23px;
   box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-link--index {
+    color: @white;
+  }
+
+  .navigation-link--active::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: @white;
+    left: 25px;
+    right: 0;
+    top: 60px;
+  }
 }

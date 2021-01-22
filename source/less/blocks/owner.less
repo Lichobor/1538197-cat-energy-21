@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+  }
 }
 
 .owner__wrapper {
   display: grid;
   row-gap: 15px;
+  margin-top: 15px;
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -25,6 +30,10 @@
 .owner {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+  }
 
   legend {
     position: relative;
