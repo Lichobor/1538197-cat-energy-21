@@ -31,7 +31,7 @@
 .form__data-scheme-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
-    padding: 70px 0;
+    padding-top: 30px;
   }
 }
 
@@ -45,6 +45,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding-top: 25px;
     padding-bottom: 70px;
   }
 }
@@ -64,6 +66,10 @@
     color: @white;
     height: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__note {
@@ -75,5 +81,9 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto 15px 65px;
     .font-secondary(16px; 16px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
   }
 }
