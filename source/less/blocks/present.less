@@ -2,11 +2,9 @@
   padding: @padding-mobile;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 708px;
+    height: 200px;
     padding: @padding-tablet;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    .outline(@red);
   }
 }
 
@@ -20,10 +18,20 @@
   background-repeat: no-repeat no-repeat;
   background-position: 100px 100px, center;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 200px;
+    background-position: 80px 60px, center;
+    background-size: 80px 82px, cover;
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 245px;
     height: 290px;
-    margin-top: 80px;
+    margin-top: 170px;
+    margin-left: -35px;
   }
 }
 
@@ -36,6 +44,16 @@
   width: 161px;
   min-height: 60px;
   overflow: hidden;
-  top: 215px;
+  top: 210px;
   left: 60px;
+
+  @media (min-width: @tablet-width) {
+    top: 60px;
+    left: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 170px;
+    left: 40px;
+  }
 }

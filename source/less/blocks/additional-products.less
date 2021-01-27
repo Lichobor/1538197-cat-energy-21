@@ -10,6 +10,8 @@
   @media (min-width: @desktop-width) {
     width: 1120px;
     padding: @padding-desktop;
+    padding-top: 20px;
+    padding-bottom: 90px;
   }
 }
 
@@ -20,19 +22,93 @@
   border-bottom: 1px solid @special_grey;
   padding: 28px 20px 30px 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .font-main(36px; 36px);
+    padding-left: 35px;
+    padding-top: 35px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: @basic_green;
+      left: -30px;
+      top: 55px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      left: -110px;
+      top: 60px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 328px;
+      height: 2px;
+      background-color: @basic_green;
+      right: -30px;
+      top: 55px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 957px;
+      left: 375px;
+      top: 60px;
+    }
+  }
 }
 
 .additional-products__items {
   .list-style;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    border: 1px solid @special_grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional-products__item {
   border-bottom: 1px solid @special_grey;
   padding-bottom: 12px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 27px;
+  }
+
   @media (min-width: @desktop-width) {
-    .flex(space-between);
+    .flex(space-between; center);
     flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.additional-products__description-wrapper {
+  @media (min-width: @tablet-width) {
+    .flex(space-between);
+    padding: 10px 35px 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -45,7 +121,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 515px;
+    width: 290px;
   }
 }
 
@@ -62,7 +138,8 @@
 
   @media (min-width: @desktop-width) {
     width: 360px;
-    padding: 0 35px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
